@@ -1,17 +1,32 @@
 // challenge 1 your age in day
 function ageInDay() {
     var birthyear = prompt("what year were you born ...good frind")
-    var ageInDays = (2018 - birthyear) * 365;
+    if (birthyear.length > 4) {
+        var ageInDays = (2018 - birthyear) * 365;
 
-    // var h1 = document.createElement('h1');
-    // var textAnswer = document.createTextNode('you are' + " " + ageInDays + " " + 'days old');
-    // h1.setAttribute('id', 'ageInDays');
-    // h1.appendChild(textAnswer);
-    // document.getElementById("flex-box-result").appendChild(h1);
+        // var h1 = document.createElement('h1');
+        // var textAnswer = document.createTextNode('you are' + " " + ageInDays + " " + 'days old');
+        // h1.setAttribute('id', 'ageInDays');
+        // h1.appendChild(textAnswer);
+        // document.getElementById("flex-box-result").appendChild(h1);
 
-    var h1 = document.getElementById('result');
-    h1.innerHTML = 'you are' + " " + ageInDays + " " + 'days old';
+        var h1 = document.getElementById('result');
+        h1.innerHTML = '';
 
+    }
+    else {
+        // alert('working')
+        var ageInDays = (2018 - birthyear) * 365;
+
+        // var h1 = document.createElement('h1');
+        // var textAnswer = document.createTextNode('you are' + " " + ageInDays + " " + 'days old');
+        // h1.setAttribute('id', 'ageInDays');
+        // h1.appendChild(textAnswer);
+        // document.getElementById("flex-box-result").appendChild(h1);
+
+        var h1 = document.getElementById('result');
+        h1.innerHTML = 'you are' + " " + ageInDays + " " + 'days old';
+    }
 
 }
 
